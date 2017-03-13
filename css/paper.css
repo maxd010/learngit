@@ -1,0 +1,116 @@
+
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,address,figure,figcaption,menu,details{display:block;box-sizing: border-box}
+table{border-collapse:collapse;border-spacing:0;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,em,strong,b{font-weight:normal;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{outline:0;}
+
+/*公共样式*/
+body{background:#f5f8fa;font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
+.m-card{background: #fff; border: 1px solid #eeeef0; border-radius: 3px; margin-bottom: 10px;}
+.m-line{border-bottom: 1px solid #eeeef0;width: 100%;height:3px; background: url("../images/m-line.png") no-repeat 10px;}
+.m-btn-big{display: block; width:244px; height:42px; color:#fff; background: #65ccab; border-radius:3px; line-height: 42px; text-align: center; font-size: 14px; margin: 0 0 20px 20px;}
+.m-btn-big:hover{color: #fff; background: #5edbb3;}
+.m-btn-mid{display: inline-block; width:144px; height:42px; color:#fff; background: #65ccab; border-radius:3px; line-height: 42px; text-align: center; font-size: 14px;}
+.m-btn-mid:hover{ background: #5edbb3;}
+.m-btn-forbidden{color: #959aa0;background: #f6f6f7;border: 1px solid #cacdd0}
+.m-btn-forbidden:hover{color: #959aa0;background: #f6f6f7;border: 1px solid #cacdd0}
+.m-full label{width:100%;}
+.m-half label{width:45%;}
+.m-quarter label{width:20%;}
+
+/*－－－－－－－ 页面布局 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.top_bar{width:100%; height:60px; background: #fff; margin-bottom: 20px;}
+.m-bd{width: 980px; margin: 0 auto;}
+.m-mn{/*左边*/ position: relative; float: left; width: 690px; min-height:500px; margin-bottom: 30px;}
+.m-sd{/*右边*/ float: right; width: 280px;}
+
+/*－－－－－－－ 左侧部分 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.m-name{height: 58px; font-size: 18px; color: #4e5661; padding-left: 20px; line-height: 58px; border-bottom: 1px solid #eeeef0; border-left: 3px solid #65ccab;}
+.m-name>span{height: 36px; font-size: 12px; color: #959aa0; margin-left: 18px}
+/*试题*/
+.m-question-waper{position: relative;min-height: 610px;padding-bottom: 20px;}
+.m-question{margin: 30px 0 30px 50px;width:590px;display: inline-block;position: relative}
+
+.m-sub-question{margin: 0;}
+.m-sub-question>.m-sub-num{margin: 0;}
+.m-question-num{font-size: 16px;color: #606771;position: absolute;top:-2px;left:-36px; border-radius: 50%;width:32px;height:32px;text-align: center;color: #fff;background:#65ccab; line-height: 32px;}
+
+.m-sub-num{left:-28px;top:auto;margin-top: 10px;background: #fff;border:1px solid #46bb95;width:20px;height:20px;color: #46bb95;line-height: 20px;font-size: 14px}
+.m-question-material{color:#727882;font-size: 16px;margin: 20px 0;}
+.m-question-title{color:#4e5661;font-size: 16px;}
+.m-question>img,.m-question>video,.m-question .audio{max-width:500px;max-height:260px;margin: 10px 0}
+.m-question .audio{display:block;width:32px;height:32px;border-radius: 50%;background: #8ad7ff;text-align: center;margin-left: 10px}
+.m-question .audio i{color: #fff;font-size: 16px;line-height: 32px;}
+.m-question-options{margin: 10px}
+.m-question-options label{color:#606771;padding: 12px;display: inline-block;font-size: 14px}
+.m-question-options input{margin-right: 6px;font-size: 16px;font-size:14px;color:#b8bbc0;}
+
+.m-question-options label:hover{font-size: 14px;color:#606771;background: #f5f8fa;cursor: pointer}
+.m-question-options input[type=text]{border:none;width: 90%;border-bottom: 1px solid #dcdddf;height: 42px;}
+.m-question-options input[type=text]:focus{border-color:#8ad7ff;color:#b8bbc0;}
+.m-question-options input[type=text]:focus{border-color:#8ad7ff;color:#606771;}
+.m-question-options .m-input[type=text]{color:#606771;}
+/*下一题按钮*/
+.m-btn-next{width:42px;min-height:600px;display: inline-block;border-left: 1px solid #eee;top:0;right:0;position: absolute; border-image: -moz-linear-gradient( red, blue,red) 30 30; border-image: linear-gradient( #fff , #eee,#fff) 30 30;}
+.m-btn-next>i{font-size: 48px;color: #46bb95;margin: 0 auto;line-height: 600px;margin-left: 15px;font-weight: bold}
+.m-btn-next:hover{cursor: pointer;background: #46bb95}
+.m-btn-next:hover>i{color: #fff;margin-left: 15px;}
+
+/*－－－－－－－ 右侧部分 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+/*计时器 交卷*/
+.m-time-des{color: #a7abb0; font-size: 14px; margin: 20px 0 0 20px;}
+.m-time-des>i{margin:0 6px ;}
+.m-time{font-size: 48px; color: #838991; margin-left:20px;}
+
+/*答题卡*/
+.m-answer-title{color: #717881; font-size: 18px; margin: 18px 10px 6px 20px;}
+.m-answer-title>span{height:16px; line-height: 16px; padding-left: 22px; margin: 8px; font-size: 12px; float: right;background:url("../images/sprise.png") no-repeat 0 0 ;}
+.m-answer-title>.yd{background-position: 0 -17px ;}
+.m-answer-title>.m-answer-right{background-position:0 -34px ;}
+.m-answer-title>.m-answer-wrong{background-position:0 -51px ;}
+.m-answer{padding:10px 20px;width:240px;position: relative;}
+.m-answer:before{content: ''; position: absolute; top: 25px; bottom: 0; width: 1px; background: #dcdddf; margin-left: -10px;}
+.m-answer>li{padding-bottom: 5px}
+.m-tixing{margin: 10px 5px 5px;color:#838991;position: relative}
+.m-tixing:before{content: ''; position: absolute; top:10px; left: 0; width: 8px; height: 1px; background: #dcdddf; margin-left: -15px;}
+.m-answer-detail{display: inline-block;width:22px;height:22px;border:1px solid #dcdddf;margin: 5px
+;font-size: 14px;line-height: 22px;text-align: center;border-radius: 3px;color: #699cbc;}
+.m-answer-detail:hover{color:#65ccab}
+.m-right{color:#657276;border-color: #9bdaf4;background: #e8f9ff}
+.m-right:hover{color:#69909c;background: #f5fcff}
+.m-right{color:#63844b;background: #e4f2e0;border-color:#c2dbb0}
+.m-right:hover{color:#76a852;background: #e6fde7;}
+.m-wrong{color:#b5433e;background: #ffcfcf;border-color:#ee938f}
+.m-wrong:hover{color:#db726d;background: #ffe3e3;}
+
+
+
+/*－－－－－－－ 试卷部分 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.m-paper-info{width:50%;padding:30px 100px;position: relative}
+.m-paper-info p{margin: 10px 0}
+.m-paper-img{display: inline-block;position: absolute;left:30px;top:60px }
+.m-paper-title{font-size: 24px;color: #4e5661;margin: 20px 0}
+.m-paper-des{color: #838991;font-size: 12px;}
+.m-paper-item{color: #717881;font-size: 14px}
+.m-paper-result{border-top:1px solid #eeeeee }
+.m-answer-detial{min-height: 300px;width:560px;float: right;padding-right:12px;box-sizing: border-box}
+.m-answer-stu{margin-left: 15px;margin-top: 20px}
+
+
+
+.bor-r{border:1px solid red}
+
+
+/*----前端开发定义---*/
+.single-subject{display: none}
+.group-subject{display: none}
